@@ -6,7 +6,16 @@
             .controls{
                 .searchResultsInfo{
                     width: 340px;
+                    a {
+                        .link-color-decoration(@brand-secondary, none);
+                    }
                 }
+            }
+        }
+
+        .searchResults {
+            .searchResultPlacemarker {
+                background: url('@{theme-img-path}placemarker_down.png');
             }
         }
     }

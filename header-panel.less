@@ -2,13 +2,53 @@
 
 #app{
     .headerPanel{
+        background-color: #d1d5da;
+        color: #000;
+
+        a.imageBtn {
+
+            &.first {
+                background-color: #000;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+
+            &.prev {
+                background-color: #000;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+
+            &.next {
+                background-color: #000;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+
+            &.last {
+                background-color: #000;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+
         .options{
             .centerOptions{
                 width: 385px;
             }
             .rightOptions{
                 .settings{
-                    background: url('@{theme-img-path}hamburger.png');
+                    background: url('@{theme-img-path}settings.png');
+                }
+                .pagingToggle.one-up{
+                    background: url('@{theme-img-path}one_up.png');
+                }
+                .pagingToggle.two-up{
+                    background: url('@{theme-img-path}two_up.png');
                 }
             }
         }
