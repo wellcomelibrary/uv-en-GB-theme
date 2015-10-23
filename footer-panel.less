@@ -2,6 +2,70 @@
 
 #app {
     .footerPanel{
+
+        .searchPager{
+            background-color: #bfd5db;
+
+            .controls{
+
+                a.previousResult{
+                    .link-color-decoration(@brand-primary, none);
+                    background-image: url('@{theme-img-path}previous_result.png');
+                    padding-left: 25px;
+                    background-color: #fff;
+                    height: 20px;
+                    margin-top: 5px;
+                    border: 1px solid @brand-primary;
+                    background-position-x: 3px;
+                    line-height: 18px;
+                }
+
+                a.nextResult{
+                    .link-color-decoration(@brand-primary, none);
+                    background-image: url('@{theme-img-path}next_result.png');
+                    padding-right: 25px;
+                    background-color: #fff;
+                    height: 20px;
+                    margin-top: 5px;
+                    border: 1px solid @brand-primary;
+                    line-height: 18px;
+                }
+
+                .searchResultsInfo{
+                    color: #000;
+
+                    a.clearSearch {
+                        .link-color-decoration(@brand-primary, none);
+                    }
+                }
+
+            }
+        }
+
+        .search {
+            background-color: #408294;
+
+            .searchOptions{
+                margin-top: 2px;
+                .label {
+                    margin-top: 5px;
+                }
+            }
+
+            .searchTextContainer {
+                border: 2px solid #bfd5db;
+
+                .searchText{
+                    margin: 0;
+                }
+
+                .autocomplete {
+                    border: 2px solid #bfd5db;
+                    left: -2px;
+                }
+            }
+        }
+
         .searchPager {
             .controls{
                 .searchResultsInfo{
@@ -17,6 +81,17 @@
             .searchResultPlacemarker {
                 background: url('@{theme-img-path}placemarker_down.png');
             }
+
+            .placeMarkerDetails{
+                h1{
+                    background-image: url('@{theme-img-path}arrow.png');
+                    background-position: 0 1px;
+                    background-repeat: no-repeat;
+                    padding: 0 5px 5px 15px;
+                    color: @brand-primary;
+                }
+            }
         }
+
     }
 }
